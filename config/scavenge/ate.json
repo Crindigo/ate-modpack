@@ -1,0 +1,41 @@
+{
+	"block_pools":
+	[
+		{
+			"name": "bedrock",
+			"type": 
+			{
+				"type": "block",
+				"name": "minecraft:bedrock"
+			},
+			"clicktype": "rightclick",
+			"properties":
+			[
+				{
+					"type": "mark_unbreakable"
+				},	
+				{
+					"type": "require_sneak"
+				},
+				{
+					"type": "play_sound",
+					"name": "minecraft:block.stone.hit"
+				},
+				{
+					"type": "swing_hand"
+				}
+			],
+			"drops":
+			[
+				{
+					"name": "earthworks:item_sand",
+					"chance": 25
+				},
+				{
+					"name": "earthworks:item_dirt",
+					"chance": 25
+				}
+			]
+		}
+	]
+}

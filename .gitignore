@@ -1,0 +1,9 @@
+logs
+*.log
+backups
+mods
+saves
+usercache.json
+usernamecache.json
+realms_persistence.json
+.curseclient
