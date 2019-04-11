@@ -1,0 +1,13 @@
+setIcon(<minecraft:crafting_table>)
+setTitle("Sticky Tables")
+setDescription("Look at you go! Now do the same thing on dirt to get some clay and sticks, and mush them together for... planks. You can see where this is going.")
+setShowToast(true)
+
+addParent("ate:era1/basic_mats")
+setRequiresParents()
+
+criteria = addCriteria("Planks", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:planks>)
+
+criteria = addCriteria("Crafting Table", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:crafting_table>)

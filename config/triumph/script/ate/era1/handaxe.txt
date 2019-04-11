@@ -1,0 +1,13 @@
+setIcon(<earthworks:tool_hand_axe>)
+setTitle("Handaxe")
+setDescription("The only thing left is this bedrock shell and some scattered rocks. You can chip at the bedrock if you make a handaxe using a couple of those rocks.")
+setShowToast(true)
+
+addParent("ate:era1/root")
+setRequiresParents()
+
+criteria = addCriteria("Feldspar", "minecraft:inventory_changed")
+criteria.addItem(<sgextraparts:genericitem:9>);
+
+criteria = addCriteria("Handaxe", "minecraft:inventory_changed");
+criteria.addItem(<earthworks:tool_hand_axe>);

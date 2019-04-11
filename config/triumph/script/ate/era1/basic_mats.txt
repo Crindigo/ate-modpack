@@ -1,0 +1,18 @@
+setIcon(<minecraft:cobblestone>)
+setTitle("Basic Materials")
+setDescription("Using your handaxe, hold down shift and the RMB on the bedrock to gather cobblestone, sand, and dirt.")
+setShowToast(true)
+
+addParent("ate:era1/handaxe")
+setRequiresParents()
+
+criteria = addCriteria("Cobblestone", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:cobblestone>)
+
+criteria = addCriteria("Dirt", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:dirt>)
+// to set a minimum:
+//criteria.addItem(<minecraft:dirt, meta:0, count:8~64>)
+
+criteria = addCriteria("Sand", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:sand>)

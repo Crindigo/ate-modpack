@@ -1,0 +1,12 @@
+setIcon(<minecraft:stone_hoe>)
+setTitle("Farming Implements")
+setDescription("With this, you are well on your way to becoming our personal ch-- the savior of the universe.")
+setShowToast(true)
+setFrameType("GOAL")
+
+addParent("ate:era1/table")
+setRequiresParents()
+
+criteria = addCriteria("stone hoe", "minecraft:inventory_changed")
+criteria.addItem(<minecraft:stone_hoe>)
+setPos(127,-26)

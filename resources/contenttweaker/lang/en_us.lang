@@ -1,1 +1,10 @@
-item.contenttweaker.pebble = Pebble
+item.contenttweaker.pebble.name=Pebble
+item.contenttweaker.woodchip.name=Woodchip
+item.contenttweaker.briquette.name=Charcoal Briquette
+item.contenttweaker.budget_redstone.name=Budget Redstone
+item.contenttweaker.tomato_gear.name=Tomato Gear
+item.contenttweaker.iron_reinforced_tomato_gear.name=Iron-Reinforced Tomato Gear
+item.contenttweaker.alch_dust_1.name=Simple Seasoning
+item.contenttweaker.alch_dust_2.name=Flavorful Seasoning
+item.contenttweaker.alch_dust_3.name=Grand Seasoning
+item.contenttweaker.alch_dust_4.name=Supreme Seasoning
