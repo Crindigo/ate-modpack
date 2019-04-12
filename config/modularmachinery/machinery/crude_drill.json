@@ -1,0 +1,197 @@
+{
+    "registryname": "crude_drill",
+    "localizedname": "Crude Drill",
+    "modifiers": [
+        {
+            "elements": "extrautils2:spike_iron@1",
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "description": "",
+            "modifier": {
+                "io": "output",
+                "target": "item",
+                "operation": 1,
+                "multiplier": 1.5,
+                "affectChance": true
+            }
+        },
+        {
+            "elements": "extrautils2:spike_gold@1",
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "description": "",
+            "modifier": {
+                "io": "output",
+                "target": "item",
+                "operation": 1,
+                "multiplier": 2.5,
+                "affectChance": true
+            }
+        },
+        {
+            "elements": "extrautils2:spike_diamond@1",
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "description": "Use a higher tier spike for greater chances at items.",
+            "modifier": {
+                "io": "output",
+                "target": "item",
+                "operation": 1,
+                "multiplier": 4.0,
+                "affectChance": true
+            }
+        }
+    ],
+    "parts": [
+        {
+            "x": -2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockoutputbus@2",
+                "modularmachinery:blockoutputbus@3",
+                "modularmachinery:blockoutputbus@4",
+                "modularmachinery:blockoutputbus@5",
+                "modularmachinery:blockoutputbus@6"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "earthworks:block_slate_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "earthworks:block_slate_slab@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 1,
+            "elements": [
+                "earthworks:block_slate_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": 1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -3,
+            "z": 1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -3,
+            "z": -1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "modularmachinery:blockfluidinputhatch"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -2,
+            "z": -1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": 1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "earthworks:block_slate_slab@0"
+            ]
+        },
+        {
+            "x": 2,
+            "y": -1,
+            "z": -1,
+            "elements": [
+                "earthworks:block_slate_slab@0"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -2,
+            "z": 0,
+            "elements": [
+                "extrautils2:spike_stone@1"
+            ]
+        },
+        {
+            "x": 0,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "contenttweaker:sub_block_holder_0@0"
+            ]
+        },
+        {
+            "x": -2,
+            "y": -3,
+            "z": -1,
+            "elements": [
+                "earthworks:wall_slate_slab@0"
+            ]
+        },
+        {
+            "x": -1,
+            "y": -1,
+            "z": 0,
+            "elements": [
+                "earthworks:block_slate_slab@0"
+            ]
+        }
+    ]}

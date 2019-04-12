@@ -17,16 +17,27 @@ recipes.addShaped("ate_dirt_furnace", <skyresources:dirtfurnace>, [
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]
 ]);
 
+// make stone tools require flint
+recipes.remove(<minecraft:stone_pickaxe>);
+recipes.addShaped("ate_stone_pick", <minecraft:stone_pickaxe>, [
+    [<ore:itemFlint>, <ore:itemFlint>, <ore:itemFlint>],
+    [null, <ore:stickWood>, null],
+    [null, <ore:stickWood>, null]
+]);
+
+// low-grade flint & steel using coremetal
 recipes.addShapeless("ate_cheap_flintsteel", <minecraft:flint_and_steel:62>, [
     <ore:ingotCoremetal>, <ore:itemFlint>
 ]);
 
-mods.inworldcrafting.FireCrafting.addRecipe(<forestry:ash>, <ore:plankWood>);
+// burn planks into ash
+mods.inworldcrafting.FireCrafting.addRecipe(<forestry:ash> * 2, <ore:plankWood>);
 
-mods.skyresources.rockgrinder.addRecipe(<earthworks:item_chalk> * 2, <minecraft:sand>);
-mods.skyresources.rockgrinder.addRecipe(<earthworks:item_chalk> * 8, <minecraft:sandstone>);
+// grind sand/sandstone into chalk powder
+mods.skyresources.rockgrinder.addRecipe(<earthworks:item_chalk> * 1, <minecraft:sand>);
+mods.skyresources.rockgrinder.addRecipe(<earthworks:item_chalk> * 4, <minecraft:sandstone>);
 
-recipes.addShapeless("ate_bonemeal", <minecraft:dye:15>, [<earthworks:item_chalk>, <ore:dustAsh>]);
+recipes.addShapeless("ate_bonemeal", <minecraft:dye:15> * 2, [<earthworks:item_chalk>, <ore:dustAsh>]);
 
 recipes.addShaped("ate_dead_bush", <minecraft:deadbush>, [
     [null, <ore:stickWood>, null],
@@ -35,13 +46,18 @@ recipes.addShaped("ate_dead_bush", <minecraft:deadbush>, [
 ]);
 
 // change crucible recipe to use porcelain
+recipes.addShaped("ate_crucible", <skyresources:crucible>, [
+    [<ceramics:unfired_clay:5>, null, <ceramics:unfired_clay:5>],
+    [<ceramics:unfired_clay:5>, null, <ceramics:unfired_clay:5>],
+    [<ceramics:unfired_clay:5>, <ceramics:unfired_clay:5>, <ceramics:unfired_clay:5>]
+]);
 
 mods.skyresources.crucible.addRecipe(<liquid:water> * 100, <minecraft:dirt>);
 for leaves in <ore:treeLeaves>.items {
     mods.skyresources.crucible.addRecipe(<liquid:water> * 250, leaves);
 }
 
-mods.inworldcrafting.FluidToItem.transform(<minecraft:clay_ball> * 2, <liquid:water>, 
+mods.inworldcrafting.FluidToItem.transform(<minecraft:clay_ball>, <liquid:water>, 
     [<earthworks:item_dirt>, <earthworks:item_sand>]);
 
 mods.inworldcrafting.FluidToItem.transform(<minecraft:sapling>, <liquid:water>, [<minecraft:deadbush>], true);

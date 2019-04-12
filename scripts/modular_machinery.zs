@@ -17,7 +17,7 @@ recipes.addShaped(<modularmachinery:blockcontroller>, [
 recipes.remove(<modularmachinery:blockinputbus:0>);
 recipes.addShaped(<modularmachinery:blockinputbus:0>, [
 	[<modularmachinery:blockcasing>],
-	[<ore:chestWood>]
+	[<extrautils2:minichest>]
 ]);
 
 // item buses go to 6, fluid hatches go to 7, energy hatches to go 7
@@ -44,7 +44,7 @@ recipes.addShaped(<modularmachinery:blockinputbus:6>, [
 
 recipes.remove(<modularmachinery:blockoutputbus:0>);
 recipes.addShaped(<modularmachinery:blockoutputbus:0>, [
-	[<ore:chestWood>],
+	[<extrautils2:minichest>],
 	[<modularmachinery:blockcasing>]
 ]);
 
