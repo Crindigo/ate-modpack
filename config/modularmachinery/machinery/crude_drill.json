@@ -7,7 +7,7 @@
             "x": 0,
             "y": -2,
             "z": 0,
-            "description": "",
+            "description": "Use a higher tier spike for greater chances at items.",
             "modifier": {
                 "io": "output",
                 "target": "item",
@@ -21,7 +21,7 @@
             "x": 0,
             "y": -2,
             "z": 0,
-            "description": "",
+            "description": "Use a higher tier spike for greater chances at items.",
             "modifier": {
                 "io": "output",
                 "target": "item",
