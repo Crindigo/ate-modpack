@@ -105,11 +105,19 @@ recipes.addShapedMirrored("ate_aa_knife", <actuallyadditions:item_knife>, [
 ]);
 
 // initial low-level seeds from grass harvesting. remove stuff, maybe add stuff.
-vanilla.seeds.removeSeed(<minecraft:dye:3>);
-vanilla.seeds.removeSeed(<actuallyadditions:item_canola_seed:0>);
-vanilla.seeds.removeSeed(<actuallyadditions:item_coffee_seed:0>);
-vanilla.seeds.removeSeed(<extrautils2:enderlilly>);
-vanilla.seeds.removeSeed(<extrautils2:redorchid>);
+val seedRemoval = [
+	<minecraft:dye:3>,
+	<actuallyadditions:item_canola_seed:0>,
+	<actuallyadditions:item_coffee_seed:0>,
+	<immersiveengineering:seed>,
+	<silentgems:fluffypuffseeds>,
+	<actuallyadditions:item_rice_seed>,
+	<actuallyadditions:item_flax_seed>
+] as IItemStack[];
+
+for srem in seedRemoval {
+	vanilla.seeds.removeSeed(srem);
+}
 
 // create plant oil manually from some seed types
 val seedPlantOil = {
@@ -127,3 +135,14 @@ for seedItem, oilMb in seedPlantOil {
 // making grass in plant oil won't consume liquid
 mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:plantoil>, 
     [<minecraft:dirt>, <minecraft:leaves>]);
+
+// grass collector - wooden shovel with silk touch
+recipes.addShaped("ate_grass_collector", <minecraft:wooden_shovel>.withTag({
+	ench: [{lvl: 1 as short, id: 33 as short}],
+	RepairCost: 1, 
+	display: {Name: "Lawnmower"}
+}), [
+	[null, <minecraft:grass>, null],
+	[null, <minecraft:wooden_shovel>, null],
+	[null, <ore:stickWood>, null]
+]);

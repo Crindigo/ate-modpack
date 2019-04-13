@@ -2,7 +2,7 @@ import crafttweaker.item.IItemStack;
 import crafttweaker.item.IIngredient;
 import crafttweaker.oredict.IOreDictEntry;
 
-// make plates require 2 ingots. also this thing is returning the wrong plates.
+// make plates require 2 ingots. also this thing was returning the wrong plates.
 var immengPlate = <immersiveengineering:metal>;
 for m in 30 to 41 {
     recipes.remove(immengPlate.withDamage(m));

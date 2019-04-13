@@ -24,6 +24,24 @@ recipes.addShaped("ate_stone_pick", <minecraft:stone_pickaxe>, [
     [null, <ore:stickWood>, null],
     [null, <ore:stickWood>, null]
 ]);
+recipes.remove(<minecraft:stone_axe>);
+recipes.addShaped("ate_stone_axe", <minecraft:stone_axe>, [
+    [<ore:itemFlint>, <ore:itemFlint>, null],
+    [<ore:itemFlint>, <ore:stickWood>, null],
+    [null, <ore:stickWood>, null]
+]);
+recipes.remove(<minecraft:stone_shovel>);
+recipes.addShaped("ate_stone_shovel", <minecraft:stone_shovel>, [
+    [null, <ore:itemFlint>, null],
+    [null, <ore:stickWood>, null],
+    [null, <ore:stickWood>, null]
+]);
+recipes.remove(<minecraft:stone_sword>);
+recipes.addShaped("ate_stone_sword", <minecraft:stone_sword>, [
+    [null, <ore:itemFlint>, null],
+    [null, <ore:itemFlint>, null],
+    [null, <ore:stickWood>, null]
+]);
 
 // low-grade flint & steel using coremetal
 recipes.addShapeless("ate_cheap_flintsteel", <minecraft:flint_and_steel:62>, [
