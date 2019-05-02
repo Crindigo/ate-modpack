@@ -53,11 +53,17 @@ foreach ( glob("$recipePath/*.json") as $jsonFile ) {
         }
 
         foreach ( $inputSet as $inputname => $number ) {
-            echo "  .addItemInput($inputname, $number)\n";
+            // oredict uses count parameter, item uses just * X
+            if ( strpos($inputname, '<ore:') !== false ) {
+                $number = $number > 1 ? ", $number" : '';
+            } else {
+                $number = $number > 1 ? " * $number" : '';
+            }
+            echo "  .addItemInput({$inputname}{$number})\n";
         }
 
-        $count = isset($json['result']['count']) ? $json['result']['count'] : 1;
-        echo "  .addItemOutput(<" . $json['result']['item'] . ">, $count)\n";
+        $count = (isset($json['result']['count']) && $json['result']['count'] > 1) ? (' * ' . $json['result']['count']) : '';
+        echo "  .addItemOutput(<" . $json['result']['item'] . ">$count)\n";
         echo "  .build();\n\n";
     }
 }
