@@ -1,6 +1,24 @@
 {
 	"block_pools": [
 		{
+			"name": "bedrock_hand",
+			"type": {
+				"type": "block",
+				"name": "minecraft:bedrock"
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{"type": "mark_unbreakable"},	
+				{"type": "require_sneak"},
+				{"type": "require_empty_hand"},
+				{"type": "play_sound", "name": "minecraft:block.stone.hit"},
+				{"type": "swing_hand"}
+			],
+			"drops": [
+				{"name": "sgextraparts:genericitem", "meta": 9, "chance": 5}
+			]
+		},
+		{
 			"name": "bedrock_handaxe",
 			"type": {
 				"type": "block",

@@ -63,7 +63,7 @@ recipes.addShaped("ate_hopper", <minecraft:hopper>, [
 ]);
 
 // coremetal nugget + 8 stone = 8 blue slate
-recipes.addShapeless("ate_blue_slate", <earthworks:block_slate>, [
+recipes.addShapeless("ate_blue_slate", <earthworks:block_slate> * 8, [
 	<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>,
 	<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <ore:nuggetCoremetal>
 ]);
@@ -80,6 +80,23 @@ recipes.addShapeless("ate_conveyor_swap1", <industrialforegoing:conveyor:0> * 2,
 recipes.addShapeless("ate_conveyor_swap2", 
 	<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 2, [
 	<industrialforegoing:conveyor:0>, <industrialforegoing:conveyor:0>]);
+
+// treated planks w/ clay bucket
+recipes.addShaped("ate_treated_planks", <immersiveengineering:treated_wood:0> * 8, [
+	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
+	[<ore:plankWood>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "creosote", Amount: 1000}}), <ore:plankWood>],
+	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
+]);
+
+// easier extracting conveyor
+val treatedStick = <immersiveengineering:material:0>;
+recipes.remove(<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:extract"}));
+recipes.addShaped("ate_conveyor_extract", <immersiveengineering:conveyor>.withTag({
+	conveyorType: "immersiveengineering:extract"
+}), [
+	[treatedStick, <harvestcraft:wovencottonitem>, treatedStick],
+	[treatedStick, <industrialforegoing:conveyor:0>, treatedStick]
+]);
 
 recipes.addShaped("ate_tomato_gear", <contenttweaker:tomato_gear>, [
 	[null, <ore:cropTomato>, null],

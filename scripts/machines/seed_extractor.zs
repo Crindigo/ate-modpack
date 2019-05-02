@@ -46,6 +46,10 @@ val makeProb = function(itemStacks as IItemStack[], start as int, end as int) as
 // --------------
 
 // don't forget about minecraft:reeds and minecraft:cactus 
+makeRecipe("se_reeds_cactus", <minecraft:sand>, <minecraft:wheat_seeds>, {
+    <minecraft:reeds> : 0.5,
+    <minecraft:cactus> : 0.5,
+});
 
 // wheat seed + grass = botania grass seeds.
 // botania:grassseeds:3-8
@@ -92,6 +96,9 @@ val baseSeeds = [
 val seedTotal = moddedSeeds.items.length; // should be 84
 
 var start = 0;
+
+// getting all this working probably took 3x longer than just writing out the code manually lol.
+// but i would have had sore wrists from typing out all the item ids.
 
 for i, grass in grasses {
     for j, baseSeed in baseSeeds {

@@ -1,4 +1,0 @@
-time set 114000
-gamerule doDaylightCycle false
-gamerule doMobSpawning false
-gamerule doWeatherCycle false

@@ -13,8 +13,7 @@
                 "io": "output",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.5,
-                "affectChance": true
+                "multiplier": 0.5
             }
         },
         {
@@ -27,8 +26,7 @@
                 "io": "output",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.2,
-                "affectChance": true
+                "multiplier": 0.2
             }
         },
         {
@@ -41,8 +39,7 @@
                 "io": "output",
                 "target": "duration",
                 "operation": 1,
-                "multiplier": 0.1,
-                "affectChance": true
+                "multiplier": 0.1
             }
         }
     ],
@@ -82,14 +79,6 @@
         {
             "x": 1,
             "y": 2,
-            "z": 1,
-            "elements": [
-                "minecraft:planks@0"
-            ]
-        },
-        {
-            "x": 0,
-            "y": 0,
             "z": 1,
             "elements": [
                 "minecraft:planks@0"
