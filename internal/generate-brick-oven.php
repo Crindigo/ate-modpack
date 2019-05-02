@@ -13,7 +13,7 @@ echo "// THIS FILE IS AUTO GENERATED\n\n";
 
 foreach ( glob("$recipePath/*.json") as $jsonFile ) {
     $json = json_decode(file_get_contents($jsonFile), true);
-    if ( $json['type'] != 'forge:ore_shapeless' ) {
+    if ( $json['type'] != 'forge:ore_shapeless' && $json['type'] != 'minecraft:crafting_shapeless' ) {
         continue;
     }
     if ( !isset($json['ingredients']) ) {

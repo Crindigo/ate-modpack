@@ -2310,6 +2310,16 @@ RB.newBuilder("ate_bo_glazedcarrotsitem", "brick_oven", 200)
   .addItemOutput(<harvestcraft:glazedcarrotsitem>)
   .build();
 
+recipes.removeByRecipeName("harvestcraft:glisteningsaladitem");
+RB.newBuilder("ate_bo_glisteningsaladitem", "brick_oven", 200)
+  .addItemInput(<ore:itemCharcoal>)
+  .addItemInput(<ore:toolPot>).setChance(0)
+  .addItemInput(<minecraft:golden_carrot>)
+  .addItemInput(<minecraft:speckled_melon>)
+  .addItemInput(<minecraft:golden_apple:0>)
+  .addItemOutput(<harvestcraft:glisteningsaladitem>)
+  .build();
+
 recipes.removeByRecipeName("harvestcraft:gooseberryjellyitem");
 RB.newBuilder("ate_bo_gooseberryjellyitem", "brick_oven", 200)
   .addItemInput(<ore:itemCharcoal>)
@@ -3458,6 +3468,21 @@ RB.newBuilder("ate_bo_minecraft_rabbitstew", "brick_oven", 200)
   .addItemOutput(<minecraft:rabbit_stew>)
   .build();
 
+recipes.removeByRecipeName("harvestcraft:minerstewitem");
+RB.newBuilder("ate_bo_minerstewitem", "brick_oven", 200)
+  .addItemInput(<ore:itemCharcoal>)
+  .addItemInput(<ore:toolPot>).setChance(0)
+  .addItemInput(<minecraft:iron_ingot>)
+  .addItemInput(<minecraft:gold_ingot>)
+  .addItemInput(<minecraft:redstone>)
+  .addItemInput(<minecraft:dye:4>)
+  .addItemInput(<minecraft:diamond>)
+  .addItemInput(<minecraft:coal:0>)
+  .addItemInput(<minecraft:flint>)
+  .addItemInput(<minecraft:rotten_flesh>)
+  .addItemOutput(<harvestcraft:minerstewitem>)
+  .build();
+
 recipes.removeByRecipeName("harvestcraft:mintcupcakeitem");
 RB.newBuilder("ate_bo_mintcupcakeitem", "brick_oven", 200)
   .addItemInput(<ore:itemCharcoal>)
@@ -3478,6 +3503,17 @@ RB.newBuilder("ate_bo_misosoupitem", "brick_oven", 200)
   .addItemInput(<ore:listAllwater>)
   .addItemInput(<ore:cropScallion>)
   .addItemOutput(<harvestcraft:misosoupitem>)
+  .build();
+
+recipes.removeByRecipeName("harvestcraft:mobsoupitem");
+RB.newBuilder("ate_bo_mobsoupitem", "brick_oven", 200)
+  .addItemInput(<ore:itemCharcoal>)
+  .addItemInput(<ore:toolPot>).setChance(0)
+  .addItemInput(<minecraft:bone>)
+  .addItemInput(<minecraft:rotten_flesh>)
+  .addItemInput(<minecraft:fermented_spider_eye>)
+  .addItemInput(<minecraft:ender_pearl>)
+  .addItemOutput(<harvestcraft:mobsoupitem>)
   .build();
 
 recipes.removeByRecipeName("harvestcraft:mochicakeitem");
@@ -4866,6 +4902,15 @@ RB.newBuilder("ate_bo_rootbeersodaitem", "brick_oven", 200)
   .addItemOutput(<harvestcraft:rootbeersodaitem>)
   .build();
 
+recipes.removeByRecipeName("harvestcraft:rosepetalteaitem");
+RB.newBuilder("ate_bo_rosepetalteaitem", "brick_oven", 200)
+  .addItemInput(<ore:itemCharcoal>)
+  .addItemInput(<ore:toolPot>).setChance(0)
+  .addItemInput(<ore:cropTea>)
+  .addItemInput(<minecraft:dye:1>)
+  .addItemOutput(<harvestcraft:rosepetalteaitem>)
+  .build();
+
 recipes.removeByRecipeName("harvestcraft:rouxitem");
 RB.newBuilder("ate_bo_rouxitem", "brick_oven", 200)
   .addItemInput(<ore:itemCharcoal>)
@@ -5033,6 +5078,17 @@ RB.newBuilder("ate_bo_shrimptemperaitem", "brick_oven", 200)
   .addItemInput(<ore:foodFlour>)
   .addItemInput(<ore:foodOliveoil>)
   .addItemOutput(<harvestcraft:shrimptemperaitem>)
+  .build();
+
+recipes.removeByRecipeName("harvestcraft:slimepieitem");
+RB.newBuilder("ate_bo_slimepieitem", "brick_oven", 200)
+  .addItemInput(<ore:itemCharcoal>)
+  .addItemInput(<ore:toolBakeware>).setChance(0)
+  .addItemInput(<minecraft:slime_ball>)
+  .addItemInput(<ore:foodDough>)
+  .addItemInput(<ore:listAllmushroom>)
+  .addItemInput(<minecraft:waterlily>)
+  .addItemOutput(<harvestcraft:slimepieitem>)
   .build();
 
 recipes.removeByRecipeName("harvestcraft:smoresitem");
