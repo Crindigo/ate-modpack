@@ -6,6 +6,7 @@
 
 $recipePath = __DIR__ . '/../../harvestcraft/src/main/resources/assets/harvestcraft/recipes';
 
+$doFluxOven = isset($_SERVER['argv'][1]) && $_SERVER['argv'][1] == 'flux';
 $tools = ['toolPot', 'toolBakeware', 'toolSaucepan', 'toolSkillet'];
 
 echo "import mods.modularmachinery.RecipeBuilder as RB;\n\n";
@@ -17,7 +18,6 @@ foreach ( glob("$recipePath/*.json") as $jsonFile ) {
         continue;
     }
     if ( !isset($json['ingredients']) ) {
-        var_dump($json);
         continue;
     }
     $inputs = $json['ingredients'];
@@ -31,13 +31,20 @@ foreach ( glob("$recipePath/*.json") as $jsonFile ) {
 
     if ( $valid ) {
         $recname = strtolower(str_replace('.json', '', basename($jsonFile)));
-        echo "recipes.removeByRecipeName(\"harvestcraft:$recname\");\n";
+        // don't remove since we're replacing these recipes with fire aspect tools
+        //echo "recipes.removeByRecipeName(\"harvestcraft:$recname\");\n";
 
-        echo "RB.newBuilder(\"ate_bo_$recname\", \"brick_oven\", 200)\n";
-        echo "  .addItemInput(<ore:itemCharcoal>)\n";
+        $machine = $doFluxOven ? 'flux_oven' : 'brick_oven';
+        $ticks = $doFluxOven ? 20 : 200;
+        $prefix = $doFluxOven ? 'fo' : 'bo';
+        echo "RB.newBuilder(\"ate_{$prefix}_$recname\", \"$machine\", $ticks)\n";
+        if ( $doFluxOven ) {
+            echo "  .addEnergyPerTickInput(500)\n";
+        } else {
+            echo "  .addItemInput(<ore:itemCharcoal>)\n";
+        }
         $inputSet = [];
         foreach ( $inputs as $input ) {
-
             if ( isset($input['type']) && $input['type'] == 'forge:ore_dict' ) {
                 $inputname = "<ore:$input[ore]>";
             } else {
