@@ -1,14 +1,14 @@
 {
-    "registryname": "brick_oven",
-    "localizedname": "Brick Oven",
-    "color": "C05050",
+    "registryname": "flux_oven",
+    "localizedname": "Flux Oven",
+    "color": "C0A020",
     "parts": [
         {
             "x": -1,
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "redstonearsenal:storage@0"
             ]
         },
         {
@@ -16,7 +16,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
@@ -24,7 +24,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "modularmachinery:blockoutputbus@1"
+                "modularmachinery:blockoutputbus@2"
             ]
         },
         {
@@ -32,23 +32,25 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
             "x": 0,
             "y": 2,
             "z": 2,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"0"},
             "elements": [
-                "minecraft:stone_slab@4"
+                "immersiveengineering:sheetmetal_slab@7"
             ]
         },
         {
             "x": 1,
             "y": 2,
             "z": 1,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"0"},
             "elements": [
-                "minecraft:stone_slab@4"
+                "immersiveengineering:sheetmetal_slab@7"
             ]
         },
         {
@@ -56,7 +58,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
@@ -64,7 +66,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "redstonearsenal:storage@0"
             ]
         },
         {
@@ -72,7 +74,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "redstonearsenal:storage@0"
             ]
         },
         {
@@ -80,7 +82,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
@@ -88,7 +90,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
@@ -96,10 +98,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "modularmachinery:blockinputbus@1",
-                "modularmachinery:blockinputbus@2",
-                "modularmachinery:blockinputbus@3",
-                "modularmachinery:blockinputbus@4"
+                "modularmachinery:blockinputbus@2"
             ]
         },
         {
@@ -107,7 +106,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "modularmachinery:blockenergyinputhatch@2"
             ]
         },
         {
@@ -115,7 +114,7 @@
             "y": 1,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
@@ -123,7 +122,7 @@
             "y": 0,
             "z": 2,
             "elements": [
-                "minecraft:brick_block@0"
+                "redstonearsenal:storage@0"
             ]
         },
         {
@@ -131,23 +130,25 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
             "x": -1,
             "y": 2,
             "z": 1,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"0"},
             "elements": [
-                "minecraft:stone_slab@4"
+                "immersiveengineering:sheetmetal_slab@7"
             ]
         },
         {
             "x": 0,
             "y": 2,
             "z": 0,
+            "nbt": {"ForgeCaps":{"nuclearcraft:capability_default_radiation_resistance":{"radiationResistance":"0.0d"}},"id":"immersiveengineering:ieslab","slabType":"0"},
             "elements": [
-                "minecraft:stone_slab@4"
+                "immersiveengineering:sheetmetal_slab@7"
             ]
         },
         {
@@ -155,7 +156,7 @@
             "y": 1,
             "z": 1,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         },
         {
@@ -163,7 +164,7 @@
             "y": 1,
             "z": 0,
             "elements": [
-                "minecraft:brick_block@0"
+                "randomthings:stainedbrick@1"
             ]
         }
     ]}

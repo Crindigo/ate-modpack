@@ -79,7 +79,7 @@ mods.skyresources.fusion.addRecipe(<minecraft:gold_ore> * 1, [stone, <harvestcra
 mods.skyresources.fusion.addRecipe(<minecraft:stone:1> * 16, [<minecraft:stone>, <harvestcraft:waterchestnutitem>], 0.25); // granite
 mods.skyresources.fusion.addRecipe(<minecraft:stone:3> * 16, [<minecraft:stone>, <harvestcraft:coconutitem>], 0.25); // diorite
 mods.skyresources.fusion.addRecipe(<minecraft:stone:5> * 16, [<minecraft:stone>, <harvestcraft:parsnipitem>], 0.25); // andesite
-mods.skyresources.fusion.addRecipe(<minecraft:netherrack> * 8, [<minecraft:stone>, <harvestcraft:chilipepperitem>], 0.50);
+mods.skyresources.fusion.addRecipe(<minecraft:netherrack> * 1, [<minecraft:cobblestone>, <harvestcraft:chilipepperitem>], 0.25);
 
 mods.skyresources.fusion.addRecipe(<chisel:marble2:7> * 16, [<minecraft:stone>, <harvestcraft:garlicitem>], 0.25);
 mods.skyresources.fusion.addRecipe(<chisel:limestone2:7> * 16, [<minecraft:stone>, <harvestcraft:limeitem>], 0.25); // lol
