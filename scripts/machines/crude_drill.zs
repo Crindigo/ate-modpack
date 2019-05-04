@@ -10,4 +10,9 @@ drillRecipe.addItemOutput(<minecraft:clay>).setChance(0.05);
 drillRecipe.addItemOutput(<materialpart:coremetal:nugget>).setChance(0.15);
 drillRecipe.build();
 
-// other input fluids later for faster operation
+// other input fluids later for faster operation or other items. like grains of infinity.
+
+val drillRecipe2 = mods.modularmachinery.RecipeBuilder.newBuilder("crude_drill_firewater", "crude_drill", 40);
+drillRecipe2.addFluidInput(<liquid:fire_water> * 10);
+drillRecipe2.addItemOutput(<ore:dustBedrock>.firstItem).setChance(0.25);
+drillRecipe2.build();
