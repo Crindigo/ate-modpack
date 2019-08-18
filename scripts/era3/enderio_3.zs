@@ -1,5 +1,6 @@
 // compressed iron block -> iron alloy block
-mods.botania.PureDaisy.addRecipe(<ore:blockIronCompressed>.firstItem, <ore:blockConstructionAlloy>.firstItem, 600);
+mods.botania.PureDaisy.addRecipe(<pneumaticcraft:compressed_iron_block>, 
+    <ore:blockConstructionAlloy>.firstItem, 600);
 
 val simpleChassis = <enderio:item_material:0>;
 recipes.remove(simpleChassis);
@@ -13,4 +14,4 @@ val ironAlloyIngot = <ore:ingotConstructionAlloy>.firstItem;
 mods.enderio.AlloySmelter.removeRecipe(ironAlloyIngot);
 
 // allow NC to make it since it's mid-late era4?
-mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([ironAlloyIngot]);
+//mods.nuclearcraft.alloy_furnace.removeRecipeWithOutput([ironAlloyIngot]);

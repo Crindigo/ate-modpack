@@ -8,39 +8,19 @@
 			},
 			"clicktype": "rightclick",
 			"properties": [
-				{"type": "mark_unbreakable"},	
+				{"type": "mark_unbreakable"},
 				{"type": "require_sneak"},
 				{"type": "require_empty_hand"},
 				{"type": "play_sound", "name": "minecraft:block.stone.hit"},
 				{"type": "swing_hand"}
 			],
 			"drops": [
-				{"name": "sgextraparts:genericitem", "meta": 9, "chance": 5}
+				{"name": "pyrotech:rock", "meta": 0, "chance": 5},
+				{"name": "pyrotech:rock", "meta": 4, "chance": 5}
 			]
 		},
 		{
-			"name": "bedrock_handaxe",
-			"type": {
-				"type": "block",
-				"name": "minecraft:bedrock"
-			},
-			"clicktype": "rightclick",
-			"properties": [
-				{"type": "mark_unbreakable"},
-				{"type": "require_item", "name": "earthworks:tool_hand_axe"},
-				{"type": "require_sneak"},
-				{"type": "damage_item", "amount": 1, "chance": 100.0},
-				{"type": "play_sound", "name": "minecraft:block.stone.hit"},
-				{"type": "swing_hand"}
-			],
-			"drops": [
-				{"name": "minecraft:cobblestone", "chance": 25},
-				{"name": "earthworks:item_dirt", "meta": 0, "chance": 36},
-				{"name": "earthworks:item_sand", "meta": 0, "chance": 36}
-			]
-		},
-		{
-			"name": "dirt_handaxe",
+			"name": "dirt_hand",
 			"type": {
 				"type": "block",
 				"name": "minecraft:dirt",
@@ -49,40 +29,19 @@
 			"clicktype": "rightclick",
 			"properties": [
 				{"type": "per_block_limit", "usage": 1, "max": 20},
-				{"type": "require_item", "name": "earthworks:tool_hand_axe"},
 				{"type": "require_sneak"},
-				{"type": "damage_item", "amount": 1, "chance": 100.0},
+				{"type": "require_empty_hand"},
 				{"type": "play_sound", "name": "minecraft:block.grass.hit"},
 				{"type": "swing_hand"}
 			],
 			"drops": [
-				{"name": "minecraft:stick", "chance": 20},
-				{"name": "minecraft:clay_ball", "chance": 8}
+				{"name": "minecraft:stick", "chance": 10},
+				{"name": "pyrotech:material", "meta": 12, "chance": 10},
+				{"name": "pyrotech:rock", "meta": 4, "chance": 10}
 			]
 		},
 		{
-			"name": "grass_handaxe",
-			"type": {
-				"type": "block",
-				"name": "minecraft:grass",
-				"meta": 0
-			},
-			"clicktype": "rightclick",
-			"properties": [
-				{"type": "per_block_limit", "usage": 1, "max": 20},
-				{"type": "require_item", "name": "earthworks:tool_hand_axe"},
-				{"type": "require_sneak"},
-				{"type": "damage_item", "amount": 1, "chance": 100.0},
-				{"type": "play_sound", "name": "minecraft:block.grass.hit"},
-				{"type": "swing_hand"}
-			],
-			"drops": [
-				{"name": "minecraft:wheat_seeds", "chance": 8},
-				{"name": "earthworks:item_dirt", "chance": 10}
-			]
-		},
-		{
-			"name": "bedrock_stone_pick",
+			"name": "bedrock_hammer",
 			"type": {
 				"type": "block",
 				"name": "minecraft:bedrock"
@@ -90,7 +49,75 @@
 			"clicktype": "rightclick",
 			"properties": [
 				{"type": "mark_unbreakable"},
-				{"type": "require_item", "name": "minecraft:stone_pickaxe"},
+				{"type": "require_item_list", "items": [
+					{"name": "pyrotech:crude_hammer"},
+					{"name": "pyrotech:stone_hammer"},
+					{"name": "pyrotech:bone_hammer"},
+					{"name": "pyrotech:flint_hammer"},
+					{"name": "pyrotech:iron_hammer"},
+					{"name": "pyrotech:gold_hammer"},
+					{"name": "pyrotech:diamond_hammer"},
+					{"name": "pyrotech:obsidian_hammer"}
+				]},
+				{"type": "require_sneak"},
+				{"type": "damage_item", "amount": 1, "chance": 100.0},
+				{"type": "play_sound", "name": "minecraft:block.stone.hit"},
+				{"type": "swing_hand"}
+			],
+			"drops": [
+				{"name": "pyrotech:rock", "meta": 0, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 1, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 2, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 3, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 4, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 5, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 8, "chance": 20},
+				{"name": "pyrotech:material", "meta": 10, "chance": 20},
+				{"name": "pyrotech:material", "meta": 11, "chance": 20}
+			]
+		},
+		{
+			"name": "dirt_hammer",
+			"type": {
+				"type": "block",
+				"name": "minecraft:dirt",
+				"meta": 0
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{"type": "per_block_limit", "usage": 1, "max": 20},
+				{"type": "require_item_list", "items": [
+					{"name": "pyrotech:crude_hammer"},
+					{"name": "pyrotech:stone_hammer"},
+					{"name": "pyrotech:bone_hammer"},
+					{"name": "pyrotech:flint_hammer"},
+					{"name": "pyrotech:iron_hammer"},
+					{"name": "pyrotech:gold_hammer"},
+					{"name": "pyrotech:diamond_hammer"},
+					{"name": "pyrotech:obsidian_hammer"}
+				]},
+				{"type": "require_sneak"},
+				{"type": "damage_item", "amount": 1, "chance": 100.0},
+				{"type": "play_sound", "name": "minecraft:block.grass.hit"},
+				{"type": "swing_hand"}
+			],
+			"drops": [
+				{"name": "pyrotech:rock", "meta": 7, "chance": 20},
+				{"name": "pyrotech:material", "meta": 12, "chance": 20},
+				{"name": "pyrotech:material", "meta": 17, "chance": 20},
+				{"name": "pyrotech:rock", "meta": 4, "chance": 10}
+			]
+		},
+		{
+			"name": "bedrock_flint_pick",
+			"type": {
+				"type": "block",
+				"name": "minecraft:bedrock"
+			},
+			"clicktype": "rightclick",
+			"properties": [
+				{"type": "mark_unbreakable"},
+				{"type": "require_item", "name": "pyrotech:flint_pickaxe"},
 				{"type": "require_sneak"},
 				{"type": "damage_item", "amount": 1, "chance": 100.0},
 				{"type": "play_sound", "name": "minecraft:block.stone.hit"},
@@ -102,7 +129,7 @@
 			]
 		},
 		{
-			"name": "bedrock_stone_shovel",
+			"name": "bedrock_flint_shovel",
 			"type": {
 				"type": "block",
 				"name": "minecraft:bedrock"
@@ -110,15 +137,15 @@
 			"clicktype": "rightclick",
 			"properties": [
 				{"type": "mark_unbreakable"},
-				{"type": "require_item", "name": "minecraft:stone_shovel"},
+				{"type": "require_item", "name": "pyrotech:flint_shovel"},
 				{"type": "require_sneak"},
 				{"type": "damage_item", "amount": 1, "chance": 100.0},
 				{"type": "play_sound", "name": "minecraft:block.stone.hit"},
 				{"type": "swing_hand"}
 			],
 			"drops": [
-				{"name": "earthworks:item_sand", "chance": 50},
-				{"name": "earthworks:item_dirt", "chance": 50}
+				{"name": "minecraft:sand", "chance": 20},
+				{"name": "minecraft:dirt", "chance": 20}
 			]
 		}
 	]

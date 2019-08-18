@@ -48,6 +48,55 @@
         "pneumaticcraft:tubes/pressure_tubes"
       ],
       "completedManualQuests": []
+    },
+    "pyrotech:book": {
+      "viewedEntries": [
+        "pyrotech:innovate/charcoal",
+        "pyrotech:innovate/pit_burn",
+        "pyrotech:appendix/ignition",
+        "pyrotech:innovate/log_pile",
+        "pyrotech:adapt/plant_fibers_dried",
+        "pyrotech:gather/stone_cobbled",
+        "pyrotech:survive/rocks",
+        "pyrotech:gather/limestone",
+        "pyrotech:accelerate/refractory_burn",
+        "pyrotech:accelerate/refractory_tank",
+        "pyrotech:accelerate/refractory_brick_block",
+        "pyrotech:accelerate/coal",
+        "pyrotech:accelerate/bloomery",
+        "pyrotech:accelerate/igniters",
+        "pyrotech:appendix/credits",
+        "pyrotech:innovate/stone_crucible",
+        "pyrotech:innovate/stone_oven",
+        "pyrotech:innovate/stone_sawmill",
+        "pyrotech:innovate/stone_kiln",
+        "pyrotech:innovate/combustion_machines",
+        "pyrotech:innovate/stone_collector",
+        "pyrotech:innovate/stone_door",
+        "pyrotech:innovate/stone_drain",
+        "pyrotech:adapt/twine",
+        "pyrotech:adapt/pit_kiln",
+        "pyrotech:accelerate/bellows",
+        "pyrotech:innovate/stone_rod",
+        "pyrotech:accelerate/coal_coke"
+      ],
+      "bookmarks": [],
+      "history": [
+        "pyrotech:accelerate/bloomery",
+        "pyrotech:accelerate/coal_coke",
+        "pyrotech:accelerate/bellows",
+        "pyrotech:innovate/stone_rod",
+        "pyrotech:adapt/pit_kiln",
+        "pyrotech:adapt/twine",
+        "pyrotech:adapt/plant_fibers_dried",
+        "pyrotech:innovate/stone_drain",
+        "pyrotech:accelerate/refractory_burn",
+        "pyrotech:innovate/pit_burn",
+        "pyrotech:innovate/stone_door",
+        "pyrotech:innovate/stone_collector",
+        "pyrotech:innovate/combustion_machines"
+      ],
+      "completedManualQuests": []
     }
   }
 }

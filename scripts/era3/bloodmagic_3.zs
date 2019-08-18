@@ -1,3 +1,5 @@
+import crafttweaker.item.IItemStack;
+
 // replace demonic will with ember crystal in altar.
 // think of something else. livingrock?
 //recipes.replaceAllOccurences(<bloodmagic:monster_soul>, <embers:crystal_ember>, <bloodmagic:altar>);
@@ -13,3 +15,7 @@ recipes.addShaped("ate_blood_altar", <bloodmagic:altar>, [
 
 // demonic will:
 // bloodmagic:monster_soul {souls:1.0d}
+
+val makeSoul = function(qty as double) as IItemStack {
+    return <bloodmagic:monster_soul>.withTag({souls: qty});
+};

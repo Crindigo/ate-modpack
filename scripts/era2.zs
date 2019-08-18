@@ -62,12 +62,6 @@ recipes.addShaped("ate_hopper", <minecraft:hopper>, [
 	[null, <ore:plateCoremetal>, null]
 ]);
 
-// coremetal nugget + 8 stone = 8 blue slate
-recipes.addShapeless("ate_blue_slate", <earthworks:block_slate> * 8, [
-	<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <minecraft:stone>,
-	<minecraft:stone>, <minecraft:stone>, <minecraft:stone>, <ore:nuggetCoremetal>
-]);
-
 // easier conveyors, swapping between the two
 recipes.addShaped("ate_early_conveyor", 
 	<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 8, [

@@ -105,10 +105,13 @@ for i, grass in grasses {
         // if i is even, use an even base seed, etc.
         if ( i % 2 == j % 2 ) {
             // the code in here runs 18 times. 
-            // the first 12 times, end should be start + 5.
-            // the last 6 times, end should be start + 4.
+            // the first 13 times, end should be start + 5.
+            // the last 5 times, end should be start + 4.
+            // change the 65 higher if there are new seeds.
+            // if more than 90 seeds, change to start + 6 and start + 5. machine has 6 outputs,
+            // so that will support up to 108 seeds.
 
-            var end = (start < 60) ? (start + 5) : (start + 4);
+            var end = (start < 65) ? (start + 5) : (start + 4);
             val recname = "se_" ~ grass.name ~ "_" ~ baseSeed.name;
 
             print(start ~ " to " ~ end ~ ": " ~ recname);

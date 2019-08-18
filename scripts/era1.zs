@@ -1,7 +1,15 @@
 import crafttweaker.item.IIngredient;
 
-val feldspar = <sgextraparts:genericitem:9>;
-recipes.addShapeless("ate_handaxe", <earthworks:tool_hand_axe>, [feldspar, feldspar]);
+// create dirt with 4x clumps instead of the compacting bin.
+val dirtClump = <pyrotech:rock:4>;
+recipes.addShapeless("ate_dirt", <minecraft:dirt>, [dirtClump, dirtClump, dirtClump, dirtClump]);
+
+// same with sand
+val sandPile = <pyrotech:rock:5>;
+recipes.addShapeless("ate_sand", <minecraft:sand>, [sandPile, sandPile, sandPile, sandPile]);
+
+// remove forestry wood pile since pyrotech has its own charcoal system
+mods.jei.JEI.removeAndHide(<forestry:wood_pile>);
 
 recipes.addShapeless("ate_era1_plank", <minecraft:planks:0>, 
     [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:itemClay>]);
@@ -16,20 +24,6 @@ recipes.addShaped("ate_dirt_furnace", <skyresources:dirtfurnace>, [
     [<minecraft:dirt>, null, <minecraft:dirt>],
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]
 ]);
-
-// low-grade flint & steel using coremetal
-recipes.addShapeless("ate_cheap_flintsteel", <minecraft:flint_and_steel:62>, [
-    <ore:ingotCoremetal>, <ore:itemFlint>
-]);
-
-// burn planks into ash
-mods.inworldcrafting.FireCrafting.addRecipe(<forestry:ash> * 2, <ore:plankWood>);
-
-// grind sand/sandstone into chalk powder
-mods.skyresources.rockgrinder.addRecipe(<earthworks:item_chalk> * 1, <minecraft:sand>);
-mods.skyresources.rockgrinder.addRecipe(<earthworks:item_chalk> * 4, <minecraft:sandstone>);
-
-recipes.addShapeless("ate_bonemeal", <minecraft:dye:15> * 2, [<earthworks:item_chalk>, <ore:dustAsh>]);
 
 recipes.addShaped("ate_dead_bush", <minecraft:deadbush>, [
     [null, <ore:stickWood>, null],
@@ -49,17 +43,40 @@ for leaves in <ore:treeLeaves>.items {
     mods.skyresources.crucible.addRecipe(<liquid:water> * 250, leaves);
 }
 
-mods.inworldcrafting.FluidToItem.transform(<minecraft:clay_ball>, <liquid:water>, 
-    [<earthworks:item_dirt>, <earthworks:item_sand>]);
+mods.pyrotech.SoakingPot.addRecipe("ate_sapling", <minecraft:sapling>, <liquid:water>, <minecraft:deadbush>, 1200);
 
-mods.inworldcrafting.FluidToItem.transform(<minecraft:sapling>, <liquid:water>, [<minecraft:deadbush>], true);
+// allow firing porcelain in kiln.
+mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_item", <ceramics:unfired_clay:5>, <ceramics:unfired_clay:4>, 105 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_block", <ceramics:porcelain>, <ceramics:clay_soft>, 420 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+
+mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_faucet", <ceramics:faucet>, <ceramics:unfired_clay:6>, 315 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_channel", <ceramics:channel>, <ceramics:unfired_clay:7>, 175 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+mods.pyrotech.StoneKiln.addRecipe("ate_clay_plate", <ceramics:unfired_clay:9>, <ceramics:unfired_clay:8>, 210 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+
+mods.pyrotech.StoneKiln.addRecipe("ate_clay_barrel", <ceramics:clay_barrel>, <ceramics:clay_barrel_unfired>, 525 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+mods.pyrotech.StoneKiln.addRecipe("ate_clay_barrelext", <ceramics:clay_barrel:1>, <ceramics:clay_barrel_unfired:1>, 315 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+
+mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_barrel", <ceramics:porcelain_barrel>, <ceramics:clay_barrel_unfired:2>, 525 * 20, 0.08,
+    [<pyrotech:material:6>, <pyrotech:material:7>], true);
+mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_barrelext", <ceramics:porcelain_barrel_extension>, <ceramics:clay_barrel_unfired:3>, 
+    525 * 20, 0.08, [<pyrotech:material:6>, <pyrotech:material:7>], true);
 
 mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:water>, 
     [<minecraft:dirt>, <minecraft:leaves>], true);
 
+<ore:blockCharcoal>.add(<pyrotech:charcoal_block>);
+
+val refractoryBrick = <pyrotech:material:5>;
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped("ate_furnace", <minecraft:furnace>, [
-    [<earthworks:item_adobe>, <earthworks:item_adobe>, <earthworks:item_adobe>],
-    [<earthworks:item_adobe>, <minecraft:coal:1>, <earthworks:item_adobe>],
+    [refractoryBrick, refractoryBrick, refractoryBrick],
+    [refractoryBrick, <ore:blockCharcoal>, refractoryBrick],
     [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
 ]);

@@ -88,8 +88,6 @@ mods.chisel.Carving.addVariation("basalt", <quark:basalt:0>);
 
 // todo: make a bunch of high-tier foods give an AE energy acceptor for earlier item organization
 
-recipes.addShapeless(<minecraft:dye:15> * 4, [<ore:dustAsh>, <earthworks:item_chalk>]); // bonemeal
-
 mods.skyresources.crucible.removeRecipe(<liquid:lava>);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 250, <minecraft:netherrack>);
 
