@@ -1,6 +1,7 @@
 {
     "registryname": "crude_drill",
     "localizedname": "Crude Drill",
+    "color": "EB6734",
     "modifiers": [
         {
             "elements": "extrautils2:spike_iron@1",
@@ -63,7 +64,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "earthworks:block_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -71,7 +72,7 @@
             "y": -2,
             "z": -1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -79,7 +80,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -87,7 +88,7 @@
             "y": -1,
             "z": -1,
             "elements": [
-                "earthworks:block_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -95,7 +96,7 @@
             "y": -3,
             "z": 1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -103,7 +104,7 @@
             "y": -1,
             "z": 1,
             "elements": [
-                "earthworks:block_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -111,7 +112,7 @@
             "y": -2,
             "z": 1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -119,7 +120,7 @@
             "y": -3,
             "z": 1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -127,7 +128,7 @@
             "y": -3,
             "z": -1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -143,7 +144,7 @@
             "y": -2,
             "z": -1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -151,7 +152,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "earthworks:block_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -159,7 +160,7 @@
             "y": -1,
             "z": -1,
             "elements": [
-                "earthworks:block_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -183,7 +184,7 @@
             "y": -3,
             "z": -1,
             "elements": [
-                "earthworks:wall_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         },
         {
@@ -191,7 +192,7 @@
             "y": -1,
             "z": 0,
             "elements": [
-                "earthworks:block_slate_slab@0"
+                "minecraft:concrete@8"
             ]
         }
     ]}

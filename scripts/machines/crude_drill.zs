@@ -7,7 +7,7 @@ drillRecipe.addItemOutput(<minecraft:dirt>).setChance(0.25);
 drillRecipe.addItemOutput(<minecraft:sand>).setChance(0.25);
 drillRecipe.addItemOutput(<pyrotech:cobblestone:3>).setChance(0.15);
 drillRecipe.addItemOutput(<minecraft:clay>).setChance(0.05);
-drillRecipe.addItemOutput(<materialpart:coremetal:nugget>).setChance(0.15);
+drillRecipe.addItemOutput(<materialpart:coremetal:ore>).setChance(0.05);
 drillRecipe.build();
 
 // other input fluids later for faster operation or other items. like grains of infinity.

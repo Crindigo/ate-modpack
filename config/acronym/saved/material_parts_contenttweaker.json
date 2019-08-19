@@ -4,13 +4,10 @@
     "coremetal_dust": 5,
     "coremetal_plate": 3,
     "coremetal_nugget": 0,
-    "coremetal_bolt": 9,
     "coremetal_rod": 7,
     "coremetal_molten": 2,
-    "coremetal_dense_plate": 4,
     "coremetal_ingot": 1,
-    "coremetal_casing": 10,
     "coremetal_gear": 6,
-    "coremetal_beam": 8
+    "coremetal_ore": 12
   }
 }

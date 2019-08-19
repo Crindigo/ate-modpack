@@ -49,7 +49,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -57,7 +57,7 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -73,7 +73,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -81,7 +81,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -89,7 +89,7 @@
             "y": 2,
             "z": -1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -97,7 +97,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -105,7 +105,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -113,7 +113,7 @@
             "y": 0,
             "z": -1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -129,7 +129,7 @@
             "y": 0,
             "z": 1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -145,7 +145,7 @@
             "y": 0,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -153,7 +153,7 @@
             "y": 2,
             "z": -1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -285,7 +285,7 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -293,7 +293,7 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -309,7 +309,7 @@
             "y": 2,
             "z": 1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -338,7 +338,7 @@
             "y": 0,
             "z": -1,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         },
         {
@@ -354,7 +354,7 @@
             "y": 2,
             "z": 0,
             "elements": [
-                "minecraft:planks@0"
+                "pyrotech:planks_tarred"
             ]
         }
     ]}

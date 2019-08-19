@@ -11,39 +11,35 @@ recipes.addShapeless("ate_sand", <minecraft:sand>, [sandPile, sandPile, sandPile
 // remove forestry wood pile since pyrotech has its own charcoal system
 mods.jei.JEI.removeAndHide(<forestry:wood_pile>);
 
+/*
 recipes.addShapeless("ate_era1_plank", <minecraft:planks:0>, 
     [<ore:stickWood>, <ore:stickWood>, <ore:stickWood>, <ore:itemClay>]);
+*/
 
 recipes.remove(<marblecraftingtable:marble_crafting_table>);
 recipes.addShapeless("ate_ctable_swap", <marblecraftingtable:marble_crafting_table>, [<minecraft:crafting_table>]);
 recipes.addShapeless("ate_ctable_swap2", <minecraft:crafting_table>, [<marblecraftingtable:marble_crafting_table>]);
 
 recipes.remove(<skyresources:dirtfurnace>);
-recipes.addShaped("ate_dirt_furnace", <skyresources:dirtfurnace>, [
+/*recipes.addShaped("ate_dirt_furnace", <skyresources:dirtfurnace>, [
     [<minecraft:dirt>, <minecraft:dirt>, <minecraft:dirt>],
     [<minecraft:dirt>, null, <minecraft:dirt>],
     [<minecraft:cobblestone>, <minecraft:cobblestone>, <minecraft:cobblestone>]
-]);
+]);*/
 
-recipes.addShaped("ate_dead_bush", <minecraft:deadbush>, [
-    [null, <ore:stickWood>, null],
-    [<ore:stickWood>, <ore:plankWood>, <ore:stickWood>],
-    [null, <ore:plankWood>, null]
-]);
+// use pyrotech crucible instead earlier on. late game can use TE magma crucible, NC melter, etc.
+mods.jei.JEI.removeAndHide(<skyresources:crucible>);
 
-// change crucible recipe to use porcelain
-recipes.addShaped("ate_crucible", <skyresources:crucible>, [
-    [<ceramics:unfired_clay:5>, null, <ceramics:unfired_clay:5>],
-    [<ceramics:unfired_clay:5>, null, <ceramics:unfired_clay:5>],
-    [<ceramics:unfired_clay:5>, <ceramics:unfired_clay:5>, <ceramics:unfired_clay:5>]
-]);
+mods.pyrotech.StoneCrucible.addRecipe("ate_water_dirt", <liquid:water> * 1000, <minecraft:dirt>, 2400);
+mods.pyrotech.StoneCrucible.addRecipe("ate_water_grass", <liquid:water> * 2000, <minecraft:grass>, 4800);
+mods.pyrotech.StoneCrucible.addRecipe("ate_water_leaves", <liquid:water> * 1000, <ore:treeLeaves>, 600);
 
-mods.skyresources.crucible.addRecipe(<liquid:water> * 100, <minecraft:dirt>);
-for leaves in <ore:treeLeaves>.items {
-    mods.skyresources.crucible.addRecipe(<liquid:water> * 250, leaves);
-}
+//mods.skyresources.crucible.addRecipe(<liquid:water> * 100, <minecraft:dirt>);
+//for leaves in <ore:treeLeaves>.items {
+    //mods.skyresources.crucible.addRecipe(<liquid:water> * 250, leaves);
+//}
 
-mods.pyrotech.SoakingPot.addRecipe("ate_sapling", <minecraft:sapling>, <liquid:water>, <minecraft:deadbush>, 1200);
+//mods.pyrotech.SoakingPot.addRecipe("ate_sapling", <minecraft:sapling>, <liquid:water>, <minecraft:deadbush>, 1200);
 
 // allow firing porcelain in kiln.
 mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_item", <ceramics:unfired_clay:5>, <ceramics:unfired_clay:4>, 105 * 20, 0.08,
@@ -68,15 +64,34 @@ mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_barrel", <ceramics:porcelain_ba
 mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_barrelext", <ceramics:porcelain_barrel_extension>, <ceramics:clay_barrel_unfired:3>, 
     525 * 20, 0.08, [<pyrotech:material:6>, <pyrotech:material:7>], true);
 
+/*
 mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:water>, 
     [<minecraft:dirt>, <minecraft:leaves>], true);
+*/
+mods.pyrotech.SoakingPot.addRecipe("ate_grass_water", <minecraft:grass>, <liquid:water> * 1000,
+    <minecraft:dirt>, 7 * 1200);
+mods.pyrotech.SoakingPot.addRecipe("ate_grass_oil", <minecraft:grass>, <liquid:plaintoil> * 100,
+    <minecraft:dirt>, 1200);
 
 <ore:blockCharcoal>.add(<pyrotech:charcoal_block>);
+
+// coremetal processing
+mods.pyrotech.BrickCrucible.addRecipe("ate_coremetal_melt", <liquid:coremetal> * 144, <ore:oreCoremetal>, 4800);
+mods.pyrotech.SoakingPot.addRecipe("ate_coremetal_soak", <materialpart:coremetal:ingot>, <liquid:coremetal> * 72,
+    <pyrotech:material:16>, 4800);
 
 val refractoryBrick = <pyrotech:material:5>;
 recipes.remove(<minecraft:furnace>);
 recipes.addShaped("ate_furnace", <minecraft:furnace>, [
     [refractoryBrick, refractoryBrick, refractoryBrick],
     [refractoryBrick, <ore:blockCharcoal>, refractoryBrick],
-    [<minecraft:stone>, <minecraft:stone>, <minecraft:stone>]
+    [<ore:ingotCoremetal>, <ore:ingotCoremetal>, <ore:ingotCoremetal>]
+]);
+
+// wood gear using boards
+recipes.remove(<thermalfoundation:material:22>);
+recipes.addShaped(<thermalfoundation:material:22>, [
+    [null, <pyrotech:material:20>, null],
+    [<pyrotech:material:20>, null, <pyrotech:material:20>],
+    [null, <pyrotech:material:20>, null]
 ]);

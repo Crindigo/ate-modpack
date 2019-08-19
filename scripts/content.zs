@@ -19,10 +19,14 @@ makeSimple("alch_dust_3");
 makeSimple("alch_dust_4");
 
 // Coremetal
-var metalPartNames = ["nugget", "ingot", "molten", "plate", "dense_plate", "dust", "gear", "rod", "beam", "bolt", "casing"] as string[];
+var metalPartNames = ["nugget", "ingot", "molten", "plate", "dust", "gear", "rod"] as string[];
 var coreMaterial = MaterialSystem.getMaterialBuilder().setName("Coremetal").setColor(Color.fromHex("405060")).build();
 coreMaterial.registerParts(metalPartNames);
 
 var coreData = coreMaterial.registerPart("block").getData();
 coreData.addDataValue("harvestTool", "pickaxe");
 coreData.addDataValue("harvestLevel", "1");
+
+var cmOreData = coreMaterial.registerPart("ore").getData();
+cmOreData.addDataValue("harvestTool", "pickaxe");
+cmOreData.addDataValue("harvestLevel", "1");

@@ -105,6 +105,8 @@
 				{"name": "pyrotech:rock", "meta": 7, "chance": 20},
 				{"name": "pyrotech:material", "meta": 12, "chance": 20},
 				{"name": "pyrotech:material", "meta": 17, "chance": 20},
+				{"name": "minecraft:sapling", "chance": 5},
+				{"name": "minecraft:carrot", "chance": 5},
 				{"name": "pyrotech:rock", "meta": 4, "chance": 10}
 			]
 		},
@@ -125,7 +127,7 @@
 			],
 			"drops": [
 				{"name": "minecraft:cobblestone", "chance": 25},
-				{"name": "contenttweaker:material_part", "meta": 0, "chance": 15}
+				{"name": "contenttweaker:sub_block_holder_0", "meta": 1, "chance": 5}
 			]
 		},
 		{
@@ -144,7 +146,7 @@
 				{"type": "swing_hand"}
 			],
 			"drops": [
-				{"name": "minecraft:sand", "chance": 20},
+				{"name": "minecraft:gravel", "chance": 20},
 				{"name": "minecraft:dirt", "chance": 20}
 			]
 		}

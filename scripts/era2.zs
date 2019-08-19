@@ -75,12 +75,10 @@ recipes.addShapeless("ate_conveyor_swap2",
 	<immersiveengineering:conveyor>.withTag({conveyorType: "immersiveengineering:conveyor"}) * 2, [
 	<industrialforegoing:conveyor:0>, <industrialforegoing:conveyor:0>]);
 
-// treated planks w/ clay bucket
-recipes.addShaped("ate_treated_planks", <immersiveengineering:treated_wood:0> * 8, [
-	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>],
-	[<ore:plankWood>, <ceramics:clay_bucket>.withTag({fluids: {FluidName: "creosote", Amount: 1000}}), <ore:plankWood>],
-	[<ore:plankWood>, <ore:plankWood>, <ore:plankWood>]
-]);
+// treated planks via soaking
+recipes.remove(<immersiveengineering:treated_wood:0>);
+mods.pyrotech.SoakingPot.addRecipe("ate_treated_planks", <immersiveengineering:treated_wood:0>, <liquid:creosote> * 125,
+    <ore:plankWood>, 1200);
 
 // easier extracting conveyor
 val treatedStick = <immersiveengineering:material:0>;
@@ -140,12 +138,13 @@ val seedPlantOil = {
 } as int[IItemStack];
 
 for seedItem, oilMb in seedPlantOil {
-	mods.skyresources.crucible.addRecipe(<liquid:plantoil> * oilMb, seedItem);
+	//mods.skyresources.crucible.addRecipe(<liquid:plantoil> * oilMb, seedItem);
+	mods.pyrotech.StoneCrucible.addRecipe("ate_plantoil_" ~ seedItem.name, <liquid:plantoil> * oilMb, seedItem, oilMb * 2, true);
 }
 
 // making grass in plant oil won't consume liquid
-mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:plantoil>, 
-    [<minecraft:dirt>, <minecraft:leaves>]);
+//mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:plantoil>, 
+    //[<minecraft:dirt>, <minecraft:leaves>]);
 
 // grass collector - wooden shovel with silk touch
 recipes.addShaped("ate_grass_collector", <minecraft:wooden_shovel>.withTag({

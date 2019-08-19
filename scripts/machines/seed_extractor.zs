@@ -13,7 +13,7 @@ val makeRecipe = function (name as string, grass as IItemStack, focus as IItemSt
 {
     val r = RecipeBuilder.newBuilder(name, "seed_extractor", 1000);
     r.addFluidInput(<liquid:plantoil> * 50);
-    r.addItemInput(<actuallyadditions:item_fertilizer>);
+    r.addItemInput(<pyrotech:mulch>);
     r.addItemInput(grass).setChance(0.25);
     r.addItemInput(focus).setChance(0);
 

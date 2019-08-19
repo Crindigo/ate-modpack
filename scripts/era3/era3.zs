@@ -87,6 +87,7 @@ mods.skyresources.fusion.addRecipe(<chisel:basalt2:7> * 16, [<minecraft:stone>, 
 mods.chisel.Carving.addVariation("basalt", <quark:basalt:0>);
 
 // todo: make a bunch of high-tier foods give an AE energy acceptor for earlier item organization
+// either that or make AE in chapter 4, so automation is done with pipes/conveyors until then.
 
 mods.skyresources.crucible.removeRecipe(<liquid:lava>);
 mods.skyresources.crucible.addRecipe(<liquid:lava> * 250, <minecraft:netherrack>);
