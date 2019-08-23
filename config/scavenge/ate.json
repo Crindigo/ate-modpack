@@ -102,11 +102,10 @@
 				{"type": "swing_hand"}
 			],
 			"drops": [
-				{"name": "pyrotech:rock", "meta": 7, "chance": 20},
 				{"name": "pyrotech:material", "meta": 12, "chance": 20},
 				{"name": "pyrotech:material", "meta": 17, "chance": 20},
 				{"name": "minecraft:sapling", "chance": 5},
-				{"name": "minecraft:carrot", "chance": 5},
+				{"name": "minecraft:wheat_seeds", "chance": 10},
 				{"name": "pyrotech:rock", "meta": 4, "chance": 10}
 			]
 		},

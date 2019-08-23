@@ -215,7 +215,6 @@ makeRecipe("se_acacia_sapling_scorched", <botania:altgrass:3>, <minecraft:saplin
 
 // blue: lightwood, menril
 makeRecipe("se_oak_sapling_infused", <botania:altgrass:4>, <minecraft:sapling:0>, {
-    <advancedrocketry:aliensapling> : 0.5,
     <integrateddynamics:menril_sapling> : 0.5
 });
 

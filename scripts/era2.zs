@@ -1,11 +1,11 @@
 import crafttweaker.item.IItemStack;
 
-// bonsai pots require porcelain
+// bonsai pots require masonry bricks for now
 recipes.remove(<bonsaitrees:bonsaipot:0>);
 recipes.addShaped("ate_bonsai_pot", <bonsaitrees:bonsaipot:0>, [
 	[null, null, null],
-	[<ceramics:unfired_clay:5>, null, <ceramics:unfired_clay:5>],
-	[<ceramics:porcelain:0>, <ceramics:porcelain:0>, <ceramics:porcelain:0>]
+	[<pyrotech:material:16>, null, <pyrotech:material:16>],
+	[<pyrotech:material:16>, <pyrotech:material:16>, <pyrotech:material:16>]
 ]);
 
 recipes.remove(<forestry:worktable:0>);
@@ -56,11 +56,13 @@ recipes.addShaped("ate_immeng_cutter", <immersiveengineering:tool:1>, [
 // smash coremetal ingots into plates
 mods.integrateddynamics.Squeezer.addRecipe(<materialpart:coremetal:ingot>, <materialpart:coremetal:plate>);
 
-// coremetal hopper
+// coremetal hopper. removed, we can use pyrotech mech hoppers
+/*
 recipes.addShaped("ate_hopper", <minecraft:hopper>, [
 	[<ore:plateCoremetal>, <ore:chestWood>, <ore:plateCoremetal>],
 	[null, <ore:plateCoremetal>, null]
 ]);
+*/
 
 // easier conveyors, swapping between the two
 recipes.addShaped("ate_early_conveyor", 
@@ -96,12 +98,15 @@ recipes.addShaped("ate_tomato_gear", <contenttweaker:tomato_gear>, [
 	[null, <ore:cropTomato>, null]
 ]);
 
+// we have some pyrotech tanks, remove the easy recipe?
 //recipes.remove(<thermalexpansion:tank:0>);
+/*
 recipes.addShaped("ate_te_tank", <thermalexpansion:tank:0>.withTag({RSControl: 0 as byte, Level: 0 as byte}), [
 	[<ore:logWood>, <ore:paneGlass>, <ore:logWood>],
 	[<ore:paneGlass>, <ore:ingotCoremetal>, <ore:paneGlass>],
 	[<ore:logWood>, <ore:paneGlass>, <ore:logWood>]
 ]);
+*/
 
 // AA knife update
 recipes.remove(<actuallyadditions:item_knife>);
@@ -139,20 +144,32 @@ val seedPlantOil = {
 
 for seedItem, oilMb in seedPlantOil {
 	//mods.skyresources.crucible.addRecipe(<liquid:plantoil> * oilMb, seedItem);
-	mods.pyrotech.StoneCrucible.addRecipe("ate_plantoil_" ~ seedItem.name, <liquid:plantoil> * oilMb, seedItem, oilMb * 2, true);
+	// making it take 1 second per mb if you put 8 items in.
+	mods.pyrotech.StoneCrucible.addRecipe("ate_plantoil_" ~ seedItem.name, <liquid:plantoil> * oilMb, seedItem, oilMb * 20 * 8, true);
 }
+
+// removed the early silk touch shovel, using condensor to make alt grass blocks
+mods.skyresources.condenser.addRecipe(<botania:altgrass:0>, 300, <botania:grassseeds:3>, <minecraft:dirt>);
+mods.skyresources.condenser.addRecipe(<botania:altgrass:1>, 300, <botania:grassseeds:4>, <minecraft:dirt>);
+mods.skyresources.condenser.addRecipe(<botania:altgrass:2>, 300, <botania:grassseeds:5>, <minecraft:dirt>);
+mods.skyresources.condenser.addRecipe(<botania:altgrass:3>, 300, <botania:grassseeds:6>, <minecraft:dirt>);
+mods.skyresources.condenser.addRecipe(<botania:altgrass:4>, 300, <botania:grassseeds:7>, <minecraft:dirt>);
+mods.skyresources.condenser.addRecipe(<botania:altgrass:5>, 300, <botania:grassseeds:8>, <minecraft:dirt>);
+
 
 // making grass in plant oil won't consume liquid
 //mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:plantoil>, 
     //[<minecraft:dirt>, <minecraft:leaves>]);
 
 // grass collector - wooden shovel with silk touch
+/*
 recipes.addShaped("ate_grass_collector", <minecraft:wooden_shovel>.withTag({
 	ench: [{lvl: 1 as short, id: 33 as short}],
 	RepairCost: 1, 
 	display: {Name: "Lawnmower"}
 }), [
-	[null, <minecraft:grass>, null],
-	[null, <minecraft:wooden_shovel>, null],
-	[null, <ore:stickWood>, null]
+	[<minecraft:grass>, <minecraft:grass>, <minecraft:grass>],
+	[<minecraft:grass>, <minecraft:wooden_shovel>, <minecraft:grass>],
+	[<minecraft:grass>, <minecraft:grass>, <minecraft:grass>]
 ]);
+*/

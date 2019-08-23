@@ -24,12 +24,10 @@
       "slagColor": "e2e2e3",
       "langKey": [
         "immersiveengineering:tile.immersiveengineering.ore.aluminum",
-        "libvulpes:material.Aluminum",
         "thermalfoundation:tile.thermalfoundation.ore.aluminum"
       ],
       "output": [
         "immersiveengineering:metal:21",
-        "libvulpes:productnugget:9",
         "thermalfoundation:material:196"
       ]
     },
@@ -39,7 +37,6 @@
         "embers:tile.ore_copper",
         "forestry:tile.for.resources.copper",
         "immersiveengineering:tile.immersiveengineering.ore.copper",
-        "libvulpes:material.Copper",
         "mekanism:tile.OreBlock.CopperOre",
         "nuclearcraft:tile.nuclearcraft.ore.copper",
         "thermalfoundation:tile.thermalfoundation.ore.copper"
@@ -47,7 +44,6 @@
       "output": [
         "embers:nugget_copper:0",
         "immersiveengineering:metal:20",
-        "libvulpes:productnugget:4",
         "mekanism:nugget:5",
         "thermalfoundation:material:192"
       ]
@@ -64,11 +60,9 @@
     "oreIridium": {
       "slagColor": "d5d4e7",
       "langKey": [
-        "libvulpes:material.Iridium",
         "thermalfoundation:tile.thermalfoundation.ore.iridium"
       ],
       "output": [
-        "libvulpes:productnugget:10",
         "thermalfoundation:material:199"
       ]
     },
@@ -154,14 +148,12 @@
       "langKey": [
         "embers:tile.ore_tin",
         "forestry:tile.for.resources.tin",
-        "libvulpes:material.Tin",
         "mekanism:tile.OreBlock.TinOre",
         "nuclearcraft:tile.nuclearcraft.ore.tin",
         "thermalfoundation:tile.thermalfoundation.ore.tin"
       ],
       "output": [
         "embers:nugget_tin:0",
-        "libvulpes:productnugget:5",
         "mekanism:nugget:6",
         "thermalfoundation:material:193"
       ]

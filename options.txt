@@ -94,7 +94,6 @@ key_quark.keybind.chestDropoff:0
 key_quark.keybind.chestMerge:0
 key_quark.keybind.chestRestock:0
 key_quark.keybind.chestExtract:0
-key_quark.keybind.lockBuilding:37
 key_quark.emote.no:0
 key_quark.emote.yes:0
 key_quark.emote.wave:0
@@ -113,6 +112,7 @@ key_quark.emote.dab:0
 key_quark.emote.jet:0
 key_quark.emote.exorcist:0
 key_quark.emote.zombie:0
+key_quark.keybind.lockBuilding:37
 key_bloodmagic.keybind.open_holding:35
 key_bloodmagic.keybind.cycle_holding_pos:13:SHIFT
 key_bloodmagic.keybind.cycle_holding_neg:12:SHIFT
@@ -134,11 +134,11 @@ key_pneumaticcraft.boots.kick:45:CONTROL
 key_pneumaticcraft.chestplate.launcher:46:CONTROL
 key_key.toastcontrol.clear:36
 key_key.open_wct.desc:0
-key_key.cofh.multimode:47
 key_key.toggle_focus.desc:15
 key_key.jei.toggleOverlay:24:CONTROL
 key_key.jei.focusSearch:33:CONTROL
 key_key.jei.toggleCheatMode:0
+key_key.jei.toggleEditMode:0
 key_key.jei.showRecipe:19
 key_key.jei.showUses:22
 key_key.jei.recipeBack:14
@@ -146,6 +146,7 @@ key_key.jei.previousPage:201
 key_key.jei.nextPage:209
 key_key.jei.bookmark:30
 key_key.jei.toggleBookmarkOverlay:0
+key_key.cofh.multimode:47
 key_bbw.key.mode:50
 key_bbw.key.fluidmode:33
 key_nei.options.keys.gui.botania_corporea_request:46
@@ -229,13 +230,6 @@ key_gui.xaero_zoom_in:23
 key_gui.xaero_zoom_out:24
 key_gui.xaero_new_waypoint:48
 key_gui.xaero_display_all_sets:0
-key_Toggle Jetpack:45
-key_Open Rocket GUI:46
-key_Toggle RCS:19
-key_Rotate Vehicle Right:32
-key_Rotate Vehicle Left:30
-key_Move Vehicle Up:44
-key_Move Vehicle Down:45
 key_key.control:29
 key_enderio.keybind.inventory:23
 key_enderio.keybind.glidertoggle:34

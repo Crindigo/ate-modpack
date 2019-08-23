@@ -27,6 +27,8 @@ recipes.removeByRecipeName("enderio:gear_ae2_messes_things_up");
 recipes.removeByRecipeName("enderio:gear_just_to_be_sure");
 recipes.removeByRecipeName("enderio:gear_better_save_than_sorry");
 
+mods.jei.JEI.removeAndHide(<skyresources:wildlifeattractor>);
+
 // remove embers metal tools that duplicate thermal
 val tools = ["pickaxe", "axe", "shovel", "hoe", "sword"] as string[];
 val metals = ["copper", "silver", "lead", "electrum", "bronze", "nickel", "tin"] as string[];

@@ -28,6 +28,7 @@ recipes.remove(<skyresources:dirtfurnace>);
 ]);*/
 
 // use pyrotech crucible instead earlier on. late game can use TE magma crucible, NC melter, etc.
+// may want to reenable this and give it a midgame recipe.
 mods.jei.JEI.removeAndHide(<skyresources:crucible>);
 
 mods.pyrotech.StoneCrucible.addRecipe("ate_water_dirt", <liquid:water> * 1000, <minecraft:dirt>, 2400);
@@ -41,39 +42,24 @@ mods.pyrotech.StoneCrucible.addRecipe("ate_water_leaves", <liquid:water> * 1000,
 
 //mods.pyrotech.SoakingPot.addRecipe("ate_sapling", <minecraft:sapling>, <liquid:water>, <minecraft:deadbush>, 1200);
 
-// allow firing porcelain in kiln.
-mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_item", <ceramics:unfired_clay:5>, <ceramics:unfired_clay:4>, 105 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_block", <ceramics:porcelain>, <ceramics:clay_soft>, 420 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-
-mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_faucet", <ceramics:faucet>, <ceramics:unfired_clay:6>, 315 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_channel", <ceramics:channel>, <ceramics:unfired_clay:7>, 175 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-mods.pyrotech.StoneKiln.addRecipe("ate_clay_plate", <ceramics:unfired_clay:9>, <ceramics:unfired_clay:8>, 210 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-
-mods.pyrotech.StoneKiln.addRecipe("ate_clay_barrel", <ceramics:clay_barrel>, <ceramics:clay_barrel_unfired>, 525 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-mods.pyrotech.StoneKiln.addRecipe("ate_clay_barrelext", <ceramics:clay_barrel:1>, <ceramics:clay_barrel_unfired:1>, 315 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-
-mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_barrel", <ceramics:porcelain_barrel>, <ceramics:clay_barrel_unfired:2>, 525 * 20, 0.08,
-    [<pyrotech:material:6>, <pyrotech:material:7>], true);
-mods.pyrotech.StoneKiln.addRecipe("ate_porcelain_barrelext", <ceramics:porcelain_barrel_extension>, <ceramics:clay_barrel_unfired:3>, 
-    525 * 20, 0.08, [<pyrotech:material:6>, <pyrotech:material:7>], true);
-
 /*
 mods.inworldcrafting.FluidToItem.transform(<minecraft:grass>, <liquid:water>, 
     [<minecraft:dirt>, <minecraft:leaves>], true);
 */
-mods.pyrotech.SoakingPot.addRecipe("ate_grass_water", <minecraft:grass>, <liquid:water> * 1000,
-    <minecraft:dirt>, 7 * 1200);
-mods.pyrotech.SoakingPot.addRecipe("ate_grass_oil", <minecraft:grass>, <liquid:plaintoil> * 100,
+
+// added wheat seeds to dirt scavenge so we only need plant oil
+//mods.pyrotech.SoakingPot.addRecipe("ate_grass_water", <minecraft:grass>, <liquid:water> * 1000,
+//    <minecraft:dirt>, 7 * 1200);
+mods.pyrotech.SoakingPot.addRecipe("ate_grass_oil", <minecraft:grass>, <liquid:plantoil> * 100,
     <minecraft:dirt>, 1200);
 
 <ore:blockCharcoal>.add(<pyrotech:charcoal_block>);
+
+// in refractory machine recipes, replace iron with polished diorite
+recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:stoneDioritePolished>, <pyrotech:brick_kiln>);
+recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:stoneDioritePolished>, <pyrotech:brick_oven>);
+recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:stoneDioritePolished>, <pyrotech:brick_sawmill>);
+recipes.replaceAllOccurences(<minecraft:iron_ingot>, <ore:stoneDioritePolished>, <pyrotech:brick_crucible>);
 
 // coremetal processing
 mods.pyrotech.BrickCrucible.addRecipe("ate_coremetal_melt", <liquid:coremetal> * 144, <ore:oreCoremetal>, 4800);
@@ -94,4 +80,9 @@ recipes.addShaped(<thermalfoundation:material:22>, [
     [null, <pyrotech:material:20>, null],
     [<pyrotech:material:20>, null, <pyrotech:material:20>],
     [null, <pyrotech:material:20>, null]
+]);
+recipes.addShaped(<thermalfoundation:material:22> * 2, [
+    [null, <pyrotech:material:23>, null],
+    [<pyrotech:material:23>, null, <pyrotech:material:23>],
+    [null, <pyrotech:material:23>, null]
 ]);

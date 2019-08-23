@@ -1,7 +1,8 @@
 {
   "savedSubBlockNames": {
     "0": {
-      "0": "coremetal_block"
+      "0": "coremetal_block",
+      "1": "coremetal_ore"
     }
   }
 }

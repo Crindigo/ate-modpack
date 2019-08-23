@@ -33,13 +33,13 @@ recipes.addShaped(<modularmachinery:blockinputbus:3>, [
 	[<modularmachinery:blockinputbus:2>, <ore:plateCoremetal>, <modularmachinery:blockinputbus:2>]
 ]);
 recipes.addShaped(<modularmachinery:blockinputbus:4>, [
-	[<modularmachinery:blockinputbus:3>, <ore:densePlateCoremetal>, <modularmachinery:blockinputbus:3>]
+	[<modularmachinery:blockinputbus:3>, <ore:plateCoremetal>, <modularmachinery:blockinputbus:3>]
 ]);
 recipes.addShaped(<modularmachinery:blockinputbus:5>, [
-	[<modularmachinery:blockinputbus:4>, <ore:densePlateCoremetal>, <modularmachinery:blockinputbus:4>]
+	[<modularmachinery:blockinputbus:4>, <ore:plateCoremetal>, <modularmachinery:blockinputbus:4>]
 ]);
 recipes.addShaped(<modularmachinery:blockinputbus:6>, [
-	[<modularmachinery:blockinputbus:5>, <ore:densePlateCoremetal>, <modularmachinery:blockinputbus:5>]
+	[<modularmachinery:blockinputbus:5>, <ore:plateCoremetal>, <modularmachinery:blockinputbus:5>]
 ]);
 
 recipes.remove(<modularmachinery:blockoutputbus:0>);
@@ -59,13 +59,13 @@ recipes.addShaped(<modularmachinery:blockoutputbus:3>, [
 	[<modularmachinery:blockoutputbus:2>, <ore:plateCoremetal>, <modularmachinery:blockoutputbus:2>]
 ]);
 recipes.addShaped(<modularmachinery:blockoutputbus:4>, [
-	[<modularmachinery:blockoutputbus:3>, <ore:densePlateCoremetal>, <modularmachinery:blockoutputbus:3>]
+	[<modularmachinery:blockoutputbus:3>, <ore:plateCoremetal>, <modularmachinery:blockoutputbus:3>]
 ]);
 recipes.addShaped(<modularmachinery:blockoutputbus:5>, [
-	[<modularmachinery:blockoutputbus:4>, <ore:densePlateCoremetal>, <modularmachinery:blockoutputbus:4>]
+	[<modularmachinery:blockoutputbus:4>, <ore:plateCoremetal>, <modularmachinery:blockoutputbus:4>]
 ]);
 recipes.addShaped(<modularmachinery:blockoutputbus:6>, [
-	[<modularmachinery:blockoutputbus:5>, <ore:densePlateCoremetal>, <modularmachinery:blockoutputbus:5>]
+	[<modularmachinery:blockoutputbus:5>, <ore:plateCoremetal>, <modularmachinery:blockoutputbus:5>]
 ]);
 
 recipes.remove(<modularmachinery:blockfluidinputhatch:0>);
@@ -85,16 +85,16 @@ recipes.addShaped(<modularmachinery:blockfluidinputhatch:3>, [
 	[<modularmachinery:blockfluidinputhatch:2>, <ore:plateCoremetal>, <modularmachinery:blockfluidinputhatch:2>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidinputhatch:4>, [
-	[<modularmachinery:blockfluidinputhatch:3>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidinputhatch:3>]
+	[<modularmachinery:blockfluidinputhatch:3>, <ore:plateCoremetal>, <modularmachinery:blockfluidinputhatch:3>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidinputhatch:5>, [
-	[<modularmachinery:blockfluidinputhatch:4>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidinputhatch:4>]
+	[<modularmachinery:blockfluidinputhatch:4>, <ore:plateCoremetal>, <modularmachinery:blockfluidinputhatch:4>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidinputhatch:6>, [
-	[<modularmachinery:blockfluidinputhatch:5>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidinputhatch:5>]
+	[<modularmachinery:blockfluidinputhatch:5>, <ore:plateCoremetal>, <modularmachinery:blockfluidinputhatch:5>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidinputhatch:7>, [
-	[<modularmachinery:blockfluidinputhatch:6>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidinputhatch:6>]
+	[<modularmachinery:blockfluidinputhatch:6>, <ore:plateCoremetal>, <modularmachinery:blockfluidinputhatch:6>]
 ]);
 
 recipes.remove(<modularmachinery:blockfluidoutputhatch:0>);
@@ -114,14 +114,14 @@ recipes.addShaped(<modularmachinery:blockfluidoutputhatch:3>, [
 	[<modularmachinery:blockfluidoutputhatch:2>, <ore:plateCoremetal>, <modularmachinery:blockfluidoutputhatch:2>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:4>, [
-	[<modularmachinery:blockfluidoutputhatch:3>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidoutputhatch:3>]
+	[<modularmachinery:blockfluidoutputhatch:3>, <ore:plateCoremetal>, <modularmachinery:blockfluidoutputhatch:3>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:5>, [
-	[<modularmachinery:blockfluidoutputhatch:4>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidoutputhatch:4>]
+	[<modularmachinery:blockfluidoutputhatch:4>, <ore:plateCoremetal>, <modularmachinery:blockfluidoutputhatch:4>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:6>, [
-	[<modularmachinery:blockfluidoutputhatch:5>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidoutputhatch:5>]
+	[<modularmachinery:blockfluidoutputhatch:5>, <ore:plateCoremetal>, <modularmachinery:blockfluidoutputhatch:5>]
 ]);
 recipes.addShaped(<modularmachinery:blockfluidoutputhatch:7>, [
-	[<modularmachinery:blockfluidoutputhatch:6>, <ore:densePlateCoremetal>, <modularmachinery:blockfluidoutputhatch:6>]
+	[<modularmachinery:blockfluidoutputhatch:6>, <ore:plateCoremetal>, <modularmachinery:blockfluidoutputhatch:6>]
 ]);

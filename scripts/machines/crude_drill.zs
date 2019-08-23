@@ -1,12 +1,19 @@
 // random low-level materials
-var drillRecipe = mods.modularmachinery.RecipeBuilder.newBuilder("crude_drill_main", "crude_drill", 40);
+var drillRecipe = mods.modularmachinery.RecipeBuilder.newBuilder("crude_drill_main", "crude_drill", 20);
 
-drillRecipe.addFluidInput(<liquid:creosote> * 10);
-drillRecipe.addItemOutput(<minecraft:cobblestone>).setChance(0.25);
-drillRecipe.addItemOutput(<minecraft:dirt>).setChance(0.25);
-drillRecipe.addItemOutput(<minecraft:sand>).setChance(0.25);
-drillRecipe.addItemOutput(<pyrotech:cobblestone:3>).setChance(0.15);
-drillRecipe.addItemOutput(<minecraft:clay>).setChance(0.05);
+drillRecipe.addFluidInput(<liquid:creosote> * 5);
+
+// stone, granite, diorite, andesite, limestone
+drillRecipe.addItemOutput(<pyrotech:rock:0>).setChance(0.25);
+drillRecipe.addItemOutput(<pyrotech:rock:1>).setChance(0.25);
+drillRecipe.addItemOutput(<pyrotech:rock:2>).setChance(0.25);
+drillRecipe.addItemOutput(<pyrotech:rock:3>).setChance(0.25);
+drillRecipe.addItemOutput(<pyrotech:rock:8>).setChance(0.25);
+// dirt, sand, clay
+drillRecipe.addItemOutput(<pyrotech:rock:4>).setChance(0.25);
+drillRecipe.addItemOutput(<pyrotech:rock:5>).setChance(0.25);
+drillRecipe.addItemOutput(<pyrotech:material:17>).setChance(0.25);
+// coremetal
 drillRecipe.addItemOutput(<materialpart:coremetal:ore>).setChance(0.05);
 drillRecipe.build();
 
