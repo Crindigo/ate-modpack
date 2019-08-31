@@ -14,8 +14,8 @@ val makeRecipe = function (name as string, grass as IItemStack, focus as IItemSt
     val r = RecipeBuilder.newBuilder(name, "seed_extractor", 1000);
     r.addFluidInput(<liquid:plantoil> * 50);
     r.addItemInput(<pyrotech:mulch>);
-    r.addItemInput(grass).setChance(0.25);
-    r.addItemInput(focus).setChance(0);
+    r.addItemInput(grass);//.setChance(0.25);
+    r.addItemInput(focus);//.setChance(0);
 
     for stack, chance in outputs {
         r.addItemOutput(stack).setChance(chance);
@@ -105,13 +105,13 @@ for i, grass in grasses {
         // if i is even, use an even base seed, etc.
         if ( i % 2 == j % 2 ) {
             // the code in here runs 18 times. 
-            // the first 13 times, end should be start + 5.
-            // the last 5 times, end should be start + 4.
-            // change the 65 higher if there are new seeds.
+            // the first 14 times, end should be start + 5.
+            // the last 4 times, end should be start + 4.
+            // change the 70 higher if there are new seeds.
             // if more than 90 seeds, change to start + 6 and start + 5. machine has 6 outputs,
             // so that will support up to 108 seeds.
 
-            var end = (start < 65) ? (start + 5) : (start + 4);
+            var end = (start < 70) ? (start + 5) : (start + 4);
             val recname = "se_" ~ grass.name ~ "_" ~ baseSeed.name;
 
             print(start ~ " to " ~ end ~ ": " ~ recname);

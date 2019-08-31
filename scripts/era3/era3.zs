@@ -69,11 +69,12 @@ for j in 0 to 25 {
 
 // iron, copper, tin, lead, gold
 val stone = <minecraft:stone>;
-mods.skyresources.fusion.addRecipe(<minecraft:iron_ore> * 4, [stone, <harvestcraft:cherrypieitem>], 0.25);
-mods.skyresources.fusion.addRecipe(<ore:oreCopper>.firstItem * 4, [stone, <harvestcraft:orangejellysandwichitem>], 0.25);
-mods.skyresources.fusion.addRecipe(<ore:oreTin>.firstItem * 2, [stone, <harvestcraft:crackersitem>], 0.25);
+mods.skyresources.fusion.addRecipe(<minecraft:iron_ore> * 4, [stone, <harvestcraft:curryitem>], 0.25);
+mods.skyresources.fusion.addRecipe(<ore:oreCopper>.firstItem * 6, [stone, <harvestcraft:orangejellysandwichitem>], 0.25);
+mods.skyresources.fusion.addRecipe(<ore:oreTin>.firstItem * 4, [stone, <harvestcraft:crackersitem>], 0.25);
 mods.skyresources.fusion.addRecipe(<ore:oreLead>.firstItem * 2, [stone, <harvestcraft:stuffedeggplantitem>], 0.25);
 mods.skyresources.fusion.addRecipe(<minecraft:gold_ore> * 1, [stone, <harvestcraft:cheeseburgeritem>], 0.25);
+mods.skyresources.fusion.addRecipe(<minecraft:redstone_ore> * 2, [stone, <harvestcraft:cherrysodaitem>], 0.25);
 
 // other forms of stone
 mods.skyresources.fusion.addRecipe(<minecraft:stone:1> * 16, [<minecraft:stone>, <harvestcraft:waterchestnutitem>], 0.25); // granite
@@ -175,7 +176,8 @@ recipes.addShaped("ate_farmer", <actuallyadditions:block_farmer>, [
 ]);
 
 
-// AA infuser: stone dust + andesite + diorite + granite + basalt = Earthen Dust, allows fusion of better metals
+// AA infuser: stone dust + andesite + diorite + granite + basalt = Earthen Dust, allows fusion of better metals.
+// maybe combined with tarred wood chips gives tier 2 alch dust?
 
 // Hearth coil: requires IE copper coil, PC compressed iron
 val copperCoilBlock = <immersiveengineering:metal_decoration0:0>;

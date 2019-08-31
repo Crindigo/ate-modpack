@@ -148,7 +148,19 @@ for seedItem, oilMb in seedPlantOil {
 	mods.pyrotech.StoneCrucible.addRecipe("ate_plantoil_" ~ seedItem.name, <liquid:plantoil> * oilMb, seedItem, oilMb * 20 * 8, true);
 }
 
-// removed the early silk touch shovel, using condensor to make alt grass blocks
+// cheaper actuallyadditions:block_placer to automate the condenser
+recipes.remove(<actuallyadditions:block_placer>);
+recipes.addShaped("ate_auto_placer", <actuallyadditions:block_placer>, [
+	[<ore:stone>, <ore:stone>, <ore:stone>],
+	[<ore:stone>, <ore:ingotCoremetal> | <ore:ingotIron>, <ore:trapdoorWood>],
+	[<ore:stone>, <ore:stone>, <ore:stone>]
+]);
+
+// removed the early silk touch shovel, using condenser to make alt grass blocks
+// 1 input item = 1 output item at approx 398 ticks. this is just for the item in the inventory, the block/fluid on top
+// will always be consumed for each output.
+// ticks^1.3 / 2400 = inputs_per_output
+// 2400 / ticks^1.3 = outputs_per_input
 mods.skyresources.condenser.addRecipe(<botania:altgrass:0>, 300, <botania:grassseeds:3>, <minecraft:dirt>);
 mods.skyresources.condenser.addRecipe(<botania:altgrass:1>, 300, <botania:grassseeds:4>, <minecraft:dirt>);
 mods.skyresources.condenser.addRecipe(<botania:altgrass:2>, 300, <botania:grassseeds:5>, <minecraft:dirt>);
